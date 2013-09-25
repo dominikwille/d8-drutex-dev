@@ -1,0 +1,11 @@
+name: Drutex
+type: module
+description: 'Renders content with extrenal programs.'
+package: Custom
+version: 1.0
+core: 8.x
+dependencies:
+tags:
+  - custom
+  - dev
+hidden: false

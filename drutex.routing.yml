@@ -1,4 +1,4 @@
-exec_render: 
+drutex: 
   path: '/drutex' 
   defaults: 
     _content: '\Drupal\drutex\Controller\DrutexController::content' 
@@ -7,6 +7,6 @@ exec_render:
 drutex.settings:
   path: 'admin/config/content/drutex'
   defaults:
-    _form: 'Drupal\exec_render\Form\DrutexSettingsForm'
+    _form: 'Drupal\drutex\Form\DrutexSettingsForm'
   requirements:
     _permission: 'administer site configuration'

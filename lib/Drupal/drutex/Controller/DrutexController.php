@@ -2,7 +2,7 @@
 
 namespace Drupal\drutex\Controller;
 
-class EXecRenderController {
+class DrutexController {
   public function content() {
     return array(
       '#type' => 'markup', 

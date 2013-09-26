@@ -5,7 +5,7 @@ function drutex_menu() {
   $items['admin/config/content/drutex'] = array(
     'title' => 'Drutex',
     'description' => 'Drutex settings.', //No thoughts about translation yet.
-    'route_name' => 'exec_render.settings',
+    'route_name' => 'drutex.settings',
     'type' => MENU_NORMAL_ITEM,
     'hdden' => false,
   );

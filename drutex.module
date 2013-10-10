@@ -1,4 +1,5 @@
 <?php
+include('drutex.class.php');
 
 function drutex_menu() {
   $items = array();

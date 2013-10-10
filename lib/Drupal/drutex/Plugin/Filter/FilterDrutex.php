@@ -29,10 +29,19 @@ class FilterDrutex extends FilterBase {
    * {@inheritdoc}
    */
   public function process($text, $langcode, $cache, $cache_id) {
-    $text = str_replace('foo', 'bar', $text);
-    dpm($text);
+    $matches = array();
+    $drutex = new Drutex();
+    $replacements = array();
 
-    $foo = new Drutex();
+    preg_match_all('/\$(.*?)\$/', $text, $matches, PREG_PATTERN_ORDER);
+
+    $matches = $matches[1];
+    foreach($matches as $expression) {
+      $image = $drutex->render($expression);
+      $text = str_replace('$' . $expression . '$', $image, $text);
+    }
+
+
     return $text;
   }
 
